@@ -39,6 +39,7 @@ import {
   TextAlignCenterIcon,
   TextAlignRightIcon,
   FillZigZagIcon,
+  FontFamilyLaiIcon,
 } from "../components/icons";
 import {
   DEFAULT_FONT_FAMILY,
@@ -699,6 +700,11 @@ export const actionChangeFontFamily = register({
         text: t("labels.code"),
         icon: FontFamilyCodeIcon,
       },
+      {
+        value: FONT_FAMILY.XiaolaiSC,
+        text: "小赖字体",
+        icon: <FontFamilyLaiIcon theme={appState.theme} />,
+    },
     ];
 
     return (
